@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8"/>
+  <title>Ian Xu's personal Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1"/>
+  <link rel="stylesheet" href="navbar.css"/>
+  <link rel="stylesheet" href="portfolio.css"/>
+
+</head>
+
+<body>
+  <nav class="navmenu">
+    <div class="flex flex-between">
+      <p class="navtitle">HOME PAGE</p>
+      <ul class="flex flex-end">
+        <li><a href="/">Home</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+        <li><a href="#">Other Links</a></li>
+      </ul>
+    </div>
+  </nav>
+  <h1>Personal Projects that I have worked on</h1>
+  <div class="project-outline" onclick="redirect('https://github.com/xu-ian/basic-forum')">
+    <h2 class="project-title">Forum Website</h2>
+    <p class="project-description">A website that lets users make forums and post on them.
+      Created with Angular typescript and ASP.NET Core with an embedded database.<br/>
+      This project was for me to learn about angular typescript and ASP.NET Core framework and took 5 days to make.<br/></p>
+    <p class="project-description bold">Skills: Angular, Typescript, C#, ASP.NET Core, Visual Studio</p>
+    <p class="project-description">Click to view project on Github</p>
+    </div>
+
+  <div class="project-outline" onclick="redirect('https://github.com/xu-ian/ImageGallery')">
+    <h2 class="project-title">Image Gallery Website</h2>
+    <p class="project-description">A website that lets users post image and view other user's galleries.
+      Created with Vue.js, bootstrap, and SASS for frontend, go with gin framework as backend, and a MySQL database.
+      This project was for me to learn about the Vue, golang, and MySQL and took one week to make.</p>
+    <p class="project-description bold">Skills: Vue.js, golang, MySQL, bootstrap, SASS</p>
+    <p class="project-description">Click to view project on Github</p>
+  </div>
+
+  <div class="project-outline" onclick="redirect('https://github.com/xu-ian/Music-Player')">
+    <h2 class="project-title">Music Player</h2>
+    <p class="project-description">A basic music player with song manager that lets you add .wav, .au, or .aiff songs
+      to the player and play, pause, and manipulate the time of the song. Written in Java with Swing interface in 3 days.
+      This project was for me to refresh my knowledge of Java and learn about using the Swing interface to create an application.
+    </p>
+    <p class="project-description bold">Skills: Java, Swing</p>
+    <p class="project-description">Click to view project on Github</p>
+  </div>
+
+  <div class="project-outline" onclick="redirect('https://github.com/xu-ian/cscc09-project')">
+    <h2 class="project-title">WebBuilder</h2>
+    <p class="project-description">A website that lets people collaborate and design websites in real time. Written with a
+      MERN stack, firebase to support logging in, websockets and webRTC to facilitate video and voice chat, and dockerized to allow
+      hosting on any server. This was a project I worked on with another student as the final project for a web programming course.
+    </p>
+    <p>Skills: React next, Node, Express, MongoDB, Websocket, WebRTC, Firebase, Docker, Google Cloud</p>
+    <p class="project-description">Click to view project on Github</p>
+  </div>
+
+  <div class="project-outline" onclick="redirect('https://github.com/xu-ian/simpleHttpServer')">
+    <h2 class="project-title">Simple Http Server</h2>
+    <p class="project-description">A simple Http Server in C from scratch for a school project. 
+      Implements HTTP1.1 features like GET, POST, PUT, PATCH, DELETE, and pipelining.</p>
+    <p class="project-description bold">Skills: C, sockets, http, css, javascript</p>
+    <p class="project-description">Click to view project on Github</p>
+    </div>
+
+  <div class="project-outline" onclick="redirect('https://github.com/xu-ian/CSCD18RayTracer')">
+    <h2 class="project-title">Raytracer</h2>
+    <p class="project-description">A raytracer written in C for a school project.</p>
+    <p class="project-description bold">Skills: C, knowledge of 3D rendering</p>
+    <p class="project-description">Click to view project on Github</p>
+  </div>
+  
+</body>
+<script>
+  function redirect(link) {
+    window.location.href = link;
+  }
+</script>
+</html>
