@@ -6,80 +6,166 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1"/>
   <link rel="stylesheet" href="navbar.css"/>
   <link rel="stylesheet" href="portfolio.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
 <body>
-  <nav class="navmenu">
-    <div class="flex flex-between">
-      <p class="navtitle">HOME PAGE</p>
-      <ul class="flex flex-end">
-        <li><a href="/">Home</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/education">Education</a></li>
-        <li><a href="/experience">Work Experience</a></li>
-        <li><a href="#">Other Links</a></li>
-      </ul>
-    </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1">PERSONAL PROJECTS</span>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
+      <li class="nav-item active"><a href="/portfolio" class="nav-link">Portfolio</a></li>
+      <li class="nav-item active"><a href="/education" class="nav-link">Education</a></li>
+      <li class="nav-item active"><a href="/experience" class="nav-link">Work Experience</a></li>
+    </ul>
   </nav>
   <h1>My Personal Projects</h1>
-  <div class="project-outline" onclick="redirect('https://github.com/xu-ian/basic-forum')">
-    <h2 class="project-title">Forum Website</h2>
-    <p class="project-description">A website that lets users make forums and post on them.
-      Created with Angular typescript and ASP.NET Core with an embedded database.<br/>
-      This project was for me to learn about angular typescript and ASP.NET Core framework and took 5 days to make.<br/></p>
-    <p class="project-description bold">Skills: HTML, CSS, Angular, Typescript, C#, ASP.NET Core, Visual Studio</p>
-    <p class="project-description">Click to view project on Github</p>
-    </div>
 
-  <div class="project-outline" onclick="redirect('https://github.com/xu-ian/ImageGallery')">
+  <div class="project-outline">
+    <h2 class="project-title">Survey Website</h2>
+    <p class="project-description">A website that lets users make surveys and respond to them.
+      Created with Angular typescript and Spring Boot with a MySQL database.<br/>
+      This project was for me to learn about Spring Boot and took a week to make.<br/></p>
+    <p class="project-description bold">Skills: HTML, CSS, Angular, Typescript, Spring Boot, Java</p>
+    <p class="project-description">Screenshots(Click to expand): </p>
+    <div class="row my-2">
+      <div class="col-2">
+        <img class="border border-secondary" src="./Screenshots/SurveySite-Authenticate.png" 
+          onclick="viewImage('./Screenshots/SurveySite-Authenticate.png')" 
+          style="max-width:100px; max-height:100px">
+      </div>
+      <div class="col-2">
+        <img class="border border-secondary" src="./Screenshots/SurveySite-EditSurvey.png" 
+          onclick="viewImage('./Screenshots/SurveySite-EditSurvey.png')" 
+          style="max-width:100px; max-height:100px">
+      </div>
+      <div class="col-2">
+        <img class="border border-secondary" src="./Screenshots/SurveySite-NewSurvey.png" 
+          onclick="viewImage('./Screenshots/SurveySite-NewSurvey.png')" 
+          style="max-width:100px; max-height:100px">
+      </div>
+      <div class="col-2">
+        <img class="border border-secondary" src="./Screenshots/SurveySite-Respond.png" 
+          onclick="viewImage('./Screenshots/SurveySite-Respond.png')" 
+          style="max-width:100px; max-height:100px">
+      </div>
+      <div class="col-2">
+        <img class="border border-secondary" src="./Screenshots/SurveySite-Responses.png" 
+          onclick="viewImage('./Screenshots/SurveySite-Responses.png')" 
+          style="max-width:100px; max-height:100px">
+      </div>
+    </div>
+    <p class="project-description link" onclick="redirect('https://github.com/xu-ian/survey-site')">Click here to view project on Github</p>
+  </div>
+
+  <div class="project-outline">
     <h2 class="project-title">Image Gallery Website</h2>
     <p class="project-description">A website that lets users post image and view other user's galleries.
       Created with Vue.js, bootstrap, and SASS for frontend, go with gin framework as backend, and a MySQL database.
       This project was for me to learn about the Vue, golang, and MySQL and took one week to make.</p>
     <p class="project-description bold">Skills: HTML, CSS, Javascript, Vue.js, golang, MySQL, bootstrap, SASS</p>
-    <p class="project-description">Click to view project on Github</p>
+    <p class="project-description">Screenshots(Click to expand): </p>
+    <div class="row my-2">
+      <div class="col-2">
+        <img class="border border-secondary" src="./Screenshots/ImageShare-Authenticate.png" 
+          onclick="viewImage('./Screenshots/ImageShare-Authenticate.png')" 
+          style="max-width:100px; max-height:100px">
+      </div>
+      <div class="col-2">
+        <img class="border border-secondary" src="./Screenshots/ImageShare-FileAdd.png" 
+          onclick="viewImage('./Screenshots/ImageShare-FileAdd.png')" 
+          style="max-width:100px; max-height:100px">
+      </div>
+      <div class="col-2">
+        <img class="border border-secondary" src="./Screenshots/ImageShare-UserGallery.png" 
+          onclick="viewImage('./Screenshots/ImageShare-UserGallery.png')" 
+          style="max-width:100px; max-height:100px">
+      </div>
+    </div>
+    <p class="project-description link" onclick="redirect('https://github.com/xu-ian/ImageGallery')">Click here to view project on Github</p>
   </div>
 
-  <div class="project-outline" onclick="redirect('https://github.com/xu-ian/Music-Player')">
+  <div class="project-outline">
+    <h2 class="project-title">Forum Website</h2>
+    <p class="project-description">A website that lets users make forums and post on them.
+      Created with Angular typescript and ASP.NET Core with an embedded database.<br/>
+      This project was for me to learn about angular typescript and ASP.NET Core framework and took 5 days to make.<br/></p>
+    <p class="project-description bold">Skills: HTML, CSS, Angular, Typescript, C#, ASP.NET Core, Visual Studio</p>
+    <p class="project-description link" onclick="redirect('https://github.com/xu-ian/basic-forum')">Click here to view project on Github</p>
+  </div>
+
+  <div class="project-outline">
     <h2 class="project-title">Music Player</h2>
     <p class="project-description">A basic music player with song manager that lets you add .wav, .au, or .aiff songs
       to the player and play, pause, and manipulate the time of the song. Written in Java with Swing interface in 3 days.
       This project was for me to refresh my knowledge of Java and learn about using the Swing interface to create an application.
     </p>
     <p class="project-description bold">Skills: Java, Swing</p>
-    <p class="project-description">Click to view project on Github</p>
+    <p class="project-description">Screenshots(Click to expand): </p>
+    <div class="row my-2">
+      <div class="col-2">
+        <img class="border border-secondary" src="./Screenshots/MusicPlayer-Initial.png" 
+          onclick="viewImage('./Screenshots/MusicPlayer-Initial.png')" 
+          style="max-width:100px; max-height:100px">
+      </div>
+      <div class="col-2">
+        <img class="border border-secondary" src="./Screenshots/MusicPlayer-SongSelected.png" 
+          onclick="viewImage('./Screenshots/MusicPlayer-SongSelected.png')" 
+          style="max-width:100px; max-height:100px">
+      </div>
+    </div>
+    <p class="project-description link" onclick="redirect('https://github.com/xu-ian/Music-Player')">Click here to view project on Github</p>
   </div>
 
-  <div class="project-outline" onclick="redirect('https://github.com/xu-ian/cscc09-project')">
+  <div class="project-outline">
     <h2 class="project-title">WebBuilder</h2>
     <p class="project-description">A website that lets people collaborate and design websites in real time. Written with a
       MERN stack, firebase to support logging in, websockets and webRTC to facilitate video and voice chat, and dockerized to allow
       hosting on any server. This was a project I worked on with another student as the final project for a web programming course.
     </p>
     <p class="project-description bold">Skills: HTML, CSS, Javascript, React.next, REST api, Node, Express, MongoDB, Websocket, WebRTC, Firebase, Docker, Google Cloud</p>
-    <p class="project-description">Click to view project on Github</p>
+    <p class="project-description link" onclick="redirect('https://github.com/xu-ian/cscc09-project')">Click here to view project on Github</p>
   </div>
 
-  <div class="project-outline" onclick="redirect('https://github.com/xu-ian/simpleHttpServer')">
+  <div class="project-outline">
     <h2 class="project-title">Simple Http Server</h2>
     <p class="project-description">A simple Http Server in C from scratch for a school project. 
       Implements HTTP1.1 features like GET, POST, PUT, PATCH, DELETE, and pipelining.</p>
     <p class="project-description bold">Skills: C, sockets, HTTP, HTML, CSS, Javascript</p>
-    <p class="project-description">Click to view project on Github</p>
+    <p class="project-description link" onclick="redirect('https://github.com/xu-ian/simpleHttpServer')">Click here to view project on Github</p>
     </div>
 
-  <div class="project-outline" onclick="redirect('https://github.com/xu-ian/CSCD18RayTracer')">
+  <div class="project-outline">
     <h2 class="project-title">Raytracer</h2>
     <p class="project-description">A raytracer written in C for a school project.</p>
     <p class="project-description bold">Skills: C, knowledge of 3D rendering</p>
-    <p class="project-description">Click to view project on Github</p>
+    <p class="project-description link" onclick="redirect('https://github.com/xu-ian/CSCD18RayTracer')">Click here to view project on Github</p>
   </div>
-  
+  <div id="magnified-image" class="screenshot" hidden>
+    <div class="position-absolute" style="right:0">  
+      <button class="btn btn-dark" onclick="closeImage()">X</button>
+    </div>
+      <img id="selected-image" class="centered" alt="Image Not Found"/>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 <script>
   function redirect(link) {
     window.location.href = link;
   }
+  function viewImage(image) {
+    console.log(image);
+    document.getElementById("selected-image").setAttribute('src', image);
+    document.getElementById("magnified-image").hidden = false;
+    document.getElementById("magnified-image").setAttribute('opacity', 1);
+  }
+  function closeImage() {
+    document.getElementById("magnified-image").hidden = true;
+    document.getElementById("magnified-image").setAttribute('opacity', 0);
+  }
+
 </script>
 </html>
